@@ -4,6 +4,7 @@ return [
     "db" => [
         "host" => "localhost",
         "user" => "root",
-        "password" => ""
+        "password" => "",
+        "db"=>"szakdolgozat"
     ]
 ];
