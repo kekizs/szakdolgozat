@@ -4,8 +4,8 @@ class Application {
 
     private static $pdo = null;
     private static $config = null;
-    private $defaultUrl = "/index.php?r=test/test/1";
 
+    //private $defaultUrl = "/index.php?r=test/test/1";
     //melyik controller melyik method-a
     public static function getConnection() {
         if (!isset(self::$config)) {
@@ -16,7 +16,7 @@ class Application {
             $user = self::$config["db"]["user"];
             $pass = self::$config["db"]["password"];
             $db = self::$config["db"]["db"];
-            
+
             self::$pdo = new PDO("mysql:host={$server};dbname={$db};charset=utf8", $user, $pass);
             self::$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
@@ -24,18 +24,24 @@ class Application {
     }
 
     public function run() {
-        if (!isset($_GET["r"])) {
-            header('Location: ' . $this->defaultUrl);
-            exit;
+        $tag=null;
+        if (isset($_GET["r"])){
+            
+          $tag = explode("/", $_GET["r"]);   
         }
-        $tag = explode("/", $_GET["r"]);
-        if (count($tag) < 2) {
-            throw new Exception("hibás url");
+       
+        $controllername = "defaultController";
+        $action = "run";
+        if (isset($tag) && isset($tag[0])) {
+            $controllername = "{$tag[0]}Controller";//konkatenálás stringbe változó
         }
-        $controllername = "{$tag[0]}Controller";
-        $action = $tag[1];
+        if (isset($tag) && isset($tag[1])) {
+
+            $action = $tag[1];
+        }
+
         $id = false;
-        if (count($tag) > 2 && is_numeric($tag[2])) {
+        if (isset($tag) && count($tag) > 2 && is_numeric($tag[2])) {
             $id = $tag[2];
         }
         if (!file_exists("./app/controller/{$controllername}.php")) {

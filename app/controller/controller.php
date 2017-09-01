@@ -10,10 +10,15 @@ abstract class controller {
         require($view);
         //layoutba beleteszi a contentemet
         $content = ob_get_clean();
+        $user=isset($_SESSION["user"]) ? $_SESSION["user"] : false;
         require './app/view/layout.php';
     }
 
     public function __construct($id) {
         $this->id = $id;
+       
     }
+    
+
+    
 }
