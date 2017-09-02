@@ -10,35 +10,35 @@
                 <div class="col-lg-4 wow fadeIn" data-wow-delay="0.2s">
 
                     <div class="widget-wrapper">
-                        <h4>Categories:</h4>
+                        <h4>Tortafélék:</h4>
                         <br>
                         <div class="list-group">
-                            <a href="#" class="list-group-item">Woman</a>
-                            <a href="#" class="list-group-item">Man</a>
-                            <a href="#" class="list-group-item">Shoes</a>
-                            <a href="#" class="list-group-item">T-shirt</a>
-                            <a href="#" class="list-group-item">Jewellery</a>
+                            <a href="#" class="list-group-item">Eszterházy</a>
+                            <a href="#" class="list-group-item">Dobos</a>
+                            <a href="#" class="list-group-item">Tortafajta3</a>
+                            <a href="#" class="list-group-item">Tortafajta4</a>
+                            <a href="#" class="list-group-item">Tortafajta5</a>
                         </div>
                     </div>
 
                     <div class="widget-wrapper wow fadeIn" data-wow-delay="0.4s">
-                        <h4>Subscription form:</h4>
+                     
                         <br>
                         <div class="card">
                             <div class="card-body">
-                                <p><strong>Subscribe to our newsletter</strong></p>
-                                <p>Once a week we will send you a summary of the most useful news</p>
+                                <p><strong>Iratkozzon fel hírlevelünkre</strong></p>
+                                <p>Értesítjük legújabb nyalánkságainkról</p>
                                 <div class="md-form">
                                     <i class="fa fa-user prefix"></i>
                                     <input type="text" id="form1" class="form-control">
-                                    <label for="form1">Your name</label>
+                                    <label for="form1">Neve:</label>
                                 </div>
                                 <div class="md-form">
                                     <i class="fa fa-envelope prefix"></i>
                                     <input type="text" id="form2" class="form-control">
-                                    <label for="form2">Your email</label>
+                                    <label for="form2">E-mail címe</label>
                                 </div>
-                                <button class="btn btn-default">Submit</button>
+                                <button class="btn btn-default">Küldés</button>
 
                             </div>
                         </div>
@@ -123,17 +123,16 @@
                             <div class="card wow fadeIn" data-wow-delay="0.2s">
 
                                 <!--Card image-->
-                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(32).jpg" alt="Card image cap">
+                                <img class="img-fluid" src="http:\\localhost\kepek\1.jpg" alt="Card image cap">
 
                                 <!--Card content-->
                                 <div class="card-body">
                                     <!--Title-->
-                                    <h4 class="card-title">Product title</h4>
+                                    <h4 class="card-title">Torta1</h4>
                                     <!--Text-->
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                        content.
+                                    <p class="card-text">Sok duma a tortáról blalbalalalblballab
                                     </p>
-                                    <a href="#" class="btn btn-default">Buy now for <strong>10$</strong></a>
+                                    <a href="#" class="btn btn-default">Vegyed <strong>25000 Ft</strong></a>
                                 </div>
 
                             </div>
@@ -147,17 +146,16 @@
                             <div class="card wow fadeIn" data-wow-delay="0.4s">
 
                                 <!--Card image-->
-                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(38).jpg" alt="Card image cap">
+                                <img class="img-fluid" src="http:\\localhost\kepek\2.jpg" alt="Card image cap">
 
                                 <!--Card content-->
                                 <div class="card-body">
                                     <!--Title-->
-                                    <h4 class="card-title">Product title</h4>
+                                    <h4 class="card-title">Torta2</h4>
                                     <!--Text-->
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                        content.
+                                    <p class="card-text">Sok duma a tortáról blalbalalalblballabSok duma a tortáról blalbalalalblballabSok duma a tortáról blalbalalalblballab
                                     </p>
-                                    <a href="#" class="btn btn-default">Buy now for <strong>30$</strong></a>
+                                    <a href="#" class="btn btn-default">Vegyed <strong>25000 Ft</strong></a>
                                 </div>
 
                             </div>
@@ -171,17 +169,16 @@
                             <div class="card wow fadeIn" data-wow-delay="0.6s">
 
                                 <!--Card image-->
-                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(1).jpg" alt="Card image cap">
+                                <img class="img-fluid" src="http:\\localhost\kepek\3.jpg" alt="Card image cap">
 
                                 <!--Card content-->
                                 <div class="card-body">
                                     <!--Title-->
-                                    <h4 class="card-title">Product title</h4>
+                                    <h4 class="card-title">Hír1</h4>
                                     <!--Text-->
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                        content.
+                                    <p class="card-text">Legyen hír!!!!!!!!!!
                                     </p>
-                                    <a href="#" class="btn btn-default">Buy now for <strong>20$</strong></a>
+                                    <a href="#" class="btn btn-default">Olvass!!! <strong></strong></a>
                                 </div>
 
                             </div>

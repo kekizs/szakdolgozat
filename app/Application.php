@@ -21,6 +21,7 @@ class Application {
             self::$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
         return self::$pdo;
+       $user = new USER($pdo);
     }
 
     public function run() {
@@ -52,8 +53,8 @@ class Application {
         if (!method_exists($instance, $action)) {
             throw new Exception("hibás action név");
         }
-        $instance->$action($id);
+        $instance->$action($id);//osztályt függvényesít
     }
 
-//osztályt függvényesít
+
 }

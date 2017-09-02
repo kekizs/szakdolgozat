@@ -68,7 +68,7 @@
             <!--Navbar-->
             <nav class="navbar fixed-top navbar-expand-md navbar-dark double-nav scrolling-navbar">
                 <div class="container">
-                    <a class="navbar-brand" href="#">AndiCake</a>
+                    <a class="navbar-brand" href="./index.php">AndiCake</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -99,7 +99,7 @@
                             </li>
                             <?php if ($user==false) : ?>
                                 <li class="nav-item">
-                                <a class="nav-link" href="./index.php?r=tortenelem/tori">Bejelentkezés</a>
+                                <a class="nav-link" href="./index.php?r=bejelentkezes/bejelent">Bejelentkezés</a>
                             </li>
                           <?php endif; ?>
                         </ul>
@@ -143,15 +143,14 @@
                     <!--First column-->
                     <div class="col-lg-3 col-md-6 ml-auto">
                         <h5 class="title mb-3"><strong>Rólunk</strong></h5>
-                        <p>Material Design (codenamed Quantum Paper) is a design language developed by Google.</p>
-                        <p>Material Design for Bootstrap (MDB) is a powerful Material Design UI KIT for most popular HTML, CSS,
-                            and JS framework - Bootstrap.</p>
+                        <p>Mi csináljuk a világ legfinomabb tortáit</p>
+                        <p>Népszerűségünk folyamatosan növekszik. Vegyél Egyél</p>
                     </div>
                     <!--/.First column-->
                     <hr class="w-100 clearfix d-sm-none">
                     <!--Second column-->
                     <div class="col-lg-2 col-md-6 ml-auto">
-                        <h5 class="title mb-3"><strong>First column</strong></h5>
+                        <h5 class="title mb-3"><strong>Linkek</strong></h5>
                         <ul>
                             <li>
                                 <a href="#!">Link 1</a>
@@ -171,7 +170,7 @@
                     <hr class="w-100 clearfix d-sm-none">
                     <!--Third column-->
                     <div class="col-lg-2 col-md-6 ml-auto">
-                        <h5 class="title mb-3"><strong>Second column</strong></h5>
+                        <h5 class="title mb-3"><strong>Linkek</strong></h5>
                         <ul>
                             <li>
                                 <a href="#!">Link 1</a>
@@ -191,7 +190,7 @@
                     <hr class="w-100 clearfix d-sm-none">
                     <!--Fourth column-->
                     <div class="col-lg-2 col-md-6 ml-auto">
-                        <h5 class="title mb-3"><strong>Third column</strong></h5>
+                        <h5 class="title mb-3"><strong>Linkek</strong></h5>
                         <ul>
                             <li>
                                 <a href="#!">Link 1</a>
