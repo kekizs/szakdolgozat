@@ -1,7 +1,7 @@
 <?php
 
-require_once("C:\progs\szakdolgozat\app\controller\userController.php");
-$user = new userController();
+require_once("C:\progs\szakdolgozat\app\model\beregisztracioModel.php");
+$user = new beregisztracioModel();
 
 
 if($user->is_loggedin()!="")
@@ -16,19 +16,19 @@ if(isset($_POST['btn-signup']))
 	$pass = strip_tags($_POST['txt_upass']);	
 	
 	if($uname=="")	{
-		$error[] = "provide username !";	
+		$error[] = "Meg kell adni egy felhasználónevet !";	
 	}
 	else if($email=="")	{
-		$error[] = "provide email id !";	
+		$error[] = "Meg kell adni egy e-mail címet !";	
 	}
-	/*else if(!filter_var($email, FILTER_VALIDATE_EMAIL))	{
-	    $error[] = 'Please enter a valid email address !';
-	}*/
+	else if(!filter_var($email, FILTER_VALIDATE_EMAIL))	{
+	    $error[] = 'Valós e-mail címet adj meg !';
+	}
 	else if($pass=="")	{
-		$error[] = "provide password !";
+		$error[] = "Meg kell adni egy jelszót !";
 	}
 	else if(strlen($pass) < 6){
-		$error[] = "Password must be atleast 6 characters";	
+		$error[] = "Legalább 6 karakter hosszúnak kell lennie a jelszónak";	
 	}
 	else
 	{
@@ -39,10 +39,10 @@ if(isset($_POST['btn-signup']))
 			$row=$stmt->fetch(PDO::FETCH_ASSOC);
 				
 			if($row['username']==$uname) {
-				$error[] = "sorry username already taken !";
+				$error[] = "A felhasználónév már foglalt !";
 			}
 			else if($row['email']==$email) {
-				$error[] = "sorry email id already taken !";
+				$error[] = "Az e-mail már foglalt !";
 			}
 			else
 			{

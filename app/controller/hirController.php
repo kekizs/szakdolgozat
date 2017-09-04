@@ -9,6 +9,6 @@ class hirController extends controller{
         $model=new hirModel;
         $result= $model->kiir($this->id);
          $this->render('./app/view/hir.php', ["data" => $result]);
-         
+        // model függvény példányosítása majd továbbítása a view felé 
     }
 }

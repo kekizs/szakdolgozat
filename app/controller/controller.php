@@ -1,5 +1,5 @@
 <?php
-
+//vezérlő ősosztály 
 abstract class controller {
     public $content;
     public $id;

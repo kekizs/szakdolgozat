@@ -11,7 +11,7 @@ class hirModel {
         $result=$stm->fetch(PDO::FETCH_ASSOC);
             return $result;
             
-      
+      //adatok kezelése függvény segítségével
        
     }
 

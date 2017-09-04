@@ -1,7 +1,7 @@
 <?php
 
-require_once("C:\progs\szakdolgozat\app\controller\userController.php");
-$login = new userController();
+require_once("C:\progs\szakdolgozat\app\model\bejelentkezesModel.php");
+$login = new bejelentkezesModel();
 
 if($login->is_loggedin()!="")
 {
@@ -20,7 +20,7 @@ if(isset($_POST['btn-login']))
 	}
 	else
 	{
-		$error = "Wrong Details !";
+		$error = "hibás adatok !";
 	}	
 }
 ?>
@@ -74,7 +74,7 @@ if(isset($_POST['btn-login']))
             </button>
         </div>  
       	<br />
-            <label>Még nem regisztrált ? <a href="./index.php?r=regisztracio/bereg">Regisztráljon!</a></label>
+            <label>Még nem regisztrált ? <a href="./index.php?r=beregisztracio/bereg">Regisztráljon!</a></label>
       </form>
 
     </div>
