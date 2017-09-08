@@ -22,9 +22,8 @@ class bejelentkezesModel {
     }
 
     public function is_loggedin() {
-        if (isset($_SESSION['user'])) {
-            return true;
-        }
+           return isset($_SESSION['user']);
+     
     }
 
     public function redirect($url) {

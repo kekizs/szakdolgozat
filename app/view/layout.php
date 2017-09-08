@@ -9,7 +9,14 @@
         <link href="../../assets/bootstrap-material-design/css/mdb.min.css" rel="stylesheet">
         <!-- Your custom styles (optional) -->
         <link href="../../assets/bootstrap-material-design/css/style.css" rel="stylesheet">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+        <link rel="stylesheet" href="../../assets/logstyle.css" type="text/css"  />
         <style rel="stylesheet">
+
+
+
+
             /* TEMPLATE STYLES */
 
             main {
@@ -87,54 +94,52 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="./index.php?r=tortenelem/tori">Tortatörténelem</a>
                             </li>
-                            
+
                             <li class="nav-item btn-group">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Letöltés 
                                 </a>
                                 <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
                                     <a class="dropdown-item" href="#">Képeslap</a>
                                     <a class="dropdown-item" href="#">Receptek</a>
-                                    
+
                                 </div>
                             </li>
-                            <?php if ($user==false) : ?>
+                            <?php if ($user == false) : ?>
                                 <li class="nav-item">
-                                <a class="nav-link" href="./index.php?r=bejelentkezes/bejelent">Bejelentkezés</a>
-                            </li>
-                          <?php endif; ?>
+                                    <a class="nav-link" href="./index.php?r=bejelentkezes/bejelent">Bejelentkezés</a>
+                                </li>
+                            <?php endif; ?>
                         </ul>
                         <form class="form-inline">
                             <input class="form-control mr-sm-2" type="text" placeholder="Keresés" aria-label="Search">
                         </form>
-                        <?php if ($user!=false) : ?>
-                        <ul class="navbar-nav mr-auto"> 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false"><i class="fa fa-user"></i> 
-                        </a>
-                            <div class="dropdown-menu dropdown-menu-right dropdown-unique" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item waves-effect waves-light" href="#">Adataim</a>
-                                <a class="dropdown-item waves-effect waves-light" href="#">Kosár</a>
-                                <a class="dropdown-item waves-effect waves-light" href="#">Kijelentkezés</a>
-                        </ul>
-                          <?php endif; ?>   
-                            </div>
-                        </li>
-                        
+                        <?php if ($user != false) : ?>
+                            <ul class="navbar-nav mr-auto"> 
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                       aria-expanded="false"><i class="fa fa-user"></i> 
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right dropdown-unique" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item waves-effect waves-light" href="#">Adataim</a>
+                                        <a class="dropdown-item waves-effect waves-light" href="#">Kosár</a>
+                                        <a class="dropdown-item waves-effect waves-light" href="#">Kijelentkezés</a>
+                            </ul>
+                        <?php endif; ?>   
                     </div>
+                    </li>
+
+                </div>
                 </div>
             </nav>
             <!--/.Navbar-->
 
         </header>
-       
+
         <div class="container valami" >    
-                    <?php
-                    
-                  
-                   echo $content;
-                    ?>
-      </div> 
+            <?php
+            echo $content;
+            ?>
+        </div> 
         <footer class="page-footer center-on-small-only">
 
             <!--Footer links-->
@@ -212,7 +217,7 @@
             <!--/.Footer links-->
             <hr>
 
-      
+
 
             <!--Copyright-->
             <div class="footer-copyright">
