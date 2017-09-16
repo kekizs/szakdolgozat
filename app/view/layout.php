@@ -12,6 +12,10 @@
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
         <link rel="stylesheet" href="../../assets/logstyle.css" type="text/css"  />
+        <link rel='stylesheet' id='woocommerce-general-css'  href='//mdbootstrap.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=3.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wsl-widget-css'  href='https://mdbootstrap.com/wp-content/plugins/wordpress-social-login/assets/css/style.css?ver=4.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='compiled.css-css'  href='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled.min.css?ver=4.4.0' type='text/css' media='all' />
+        
         <style rel="stylesheet">
 
 
@@ -73,8 +77,8 @@
         <header>
 
             <!--Navbar-->
-            <nav class="navbar fixed-top navbar-expand-md navbar-dark double-nav scrolling-navbar">
-                <div class="container">
+            <nav class="navbar fixed-top navbar-expand-md navbar-dark double-nav scrolling-navbar style">
+                <div class="container"  >
                     <a class="navbar-brand" href="./index.php">AndiCake</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -120,9 +124,9 @@
                                        aria-expanded="false"><i class="fa fa-user"></i> 
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-right dropdown-unique" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item waves-effect waves-light" href="#">Adataim</a>
-                                        <a class="dropdown-item waves-effect waves-light" href="#">Kosár</a>
-                                        <a class="dropdown-item waves-effect waves-light" href="#">Kijelentkezés</a>
+                                        <a class="dropdown-item waves-effect waves-light" href="./index.php?r=user/modify">Adataim</a>
+                                        <a class="dropdown-item waves-effect waves-light" href="./index.php?r=kosar/kosar">Kosár</a>
+                                        <a class="dropdown-item waves-effect waves-light" href="./index.php?r=bejelentkezes/logout">Kijelentkezés</a>
                             </ul>
                         <?php endif; ?>   
                     </div>
@@ -234,5 +238,10 @@
         <script type="text/javascript" src="../../assets/bootstrap-material-design/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="../../assets/bootstrap-material-design/js/mdb.min.js"></script>
         <script src="./assets/script.js"></script>
+        <script type='text/javascript' src='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/ajax-auth-script.js?ver=4.8.1'></script>
+<script type='text/javascript' src='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/comments-reply-mod.js?ver=4.8.1'></script>
+<script type='text/javascript' src='https://mdbootstrap.com/wp-content/plugins/brandflow-wp/public/js/brandflow-wp-public.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://mdbootstrap.com/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-form-move-tracker.js?ver=1.7.1'></script>
+<script type='text/javascript'>
     </body>
 </html>

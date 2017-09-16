@@ -1,23 +1,4 @@
-<?php
-require_once("./app/model/bejelentkezesModel.php");
-$login = new bejelentkezesModel();
 
-if ($login->is_loggedin() != "") {
-    $login->redirect('index.php');
-}
-
-if (isset($_POST['btn-login'])) {
-    $uname = strip_tags($_POST['txt_uname_email']);
-    $email = strip_tags($_POST['txt_uname_email']);
-    $pass = strip_tags($_POST['txt_password']);
-
-    if ($login->doLogin($uname, $email, $pass)) {
-        $login->redirect('index.php');
-    } else {
-        $error = "hibás adatok !";
-    }
-}
-?>
 
                     <div class="signin-form">
 

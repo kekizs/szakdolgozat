@@ -3,6 +3,9 @@
 
 body{
 	background:#f1f9f9;
+        clear: both;
+        max-height: 960px;
+	margin:20px 20px;
 }
 
 .form-signin {

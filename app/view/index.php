@@ -1,5 +1,5 @@
 <div class="container" style="min-height:600px;margin-top: 100px;">
-            <div class="row">
+            <div class="row" >
                 <div class="col-lg-12">
                     
                     
@@ -117,6 +117,7 @@
 
                     <!--Second row-->
                     <div class="row">
+                        <?php foreach ($hirek as $hir){?>
                         <!--First columnn-->
                         <div class="col-lg-4">
                             <!--Card-->
@@ -128,9 +129,9 @@
                                 <!--Card content-->
                                 <div class="card-body">
                                     <!--Title-->
-                                    <h4 class="card-title">Torta1</h4>
+                                    <h4 class="card-title"><?= $hir["cim"] ?></h4>
                                     <!--Text-->
-                                    <p class="card-text">Sok duma a tortáról blalbalalalblballab
+                                    <p class="card-text"><?= $hir["szoveg"] ?>
                                     </p>
                                     <a href="#" class="btn btn-default">Vegyed <strong>25000 Ft</strong></a>
                                 </div>
@@ -139,53 +140,8 @@
                             <!--/.Card-->
                         </div>
                         <!--First columnn-->
-
-                        <!--Second columnn-->
-                        <div class="col-lg-4">
-                            <!--Card-->
-                            <div class="card wow fadeIn" data-wow-delay="0.4s">
-
-                                <!--Card image-->
-                                <img class="img-fluid" src="http:\\localhost\kepek\2.jpg" alt="Card image cap">
-
-                                <!--Card content-->
-                                <div class="card-body">
-                                    <!--Title-->
-                                    <h4 class="card-title">Torta2</h4>
-                                    <!--Text-->
-                                    <p class="card-text">Sok duma a tortáról blalbalalalblballabSok duma a tortáról blalbalalalblballabSok duma a tortáról blalbalalalblballab
-                                    </p>
-                                    <a href="#" class="btn btn-default">Vegyed <strong>25000 Ft</strong></a>
-                                </div>
-
-                            </div>
-                            <!--/.Card-->
-                        </div>
-                        <!--Second columnn-->
-
-                        <!--Third columnn-->
-                        <div class="col-lg-4">
-                            <!--Card-->
-                            <div class="card wow fadeIn" data-wow-delay="0.6s">
-
-                                <!--Card image-->
-                                <img class="img-fluid" src="http:\\localhost\kepek\3.jpg" alt="Card image cap">
-
-                                <!--Card content-->
-                                <div class="card-body">
-                                    <!--Title-->
-                                    <h4 class="card-title">Hír1</h4>
-                                    <!--Text-->
-                                    <p class="card-text">Legyen hír!!!!!!!!!!
-                                    </p>
-                                    <a href="#" class="btn btn-default">Olvass!!! <strong></strong></a>
-                                </div>
-
-                            </div>
-                            <!--/.Card-->
-
-                        </div>
-                        <!--Third columnn-->
+                        <?php } ?>
+                        
                     </div>
                     <!--/.Second row-->
 

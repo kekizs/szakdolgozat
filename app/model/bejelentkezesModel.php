@@ -7,10 +7,12 @@ class bejelentkezesModel {
             $pdo = Application::getConnection();
             $stmt = $pdo->prepare("SELECT * FROM user WHERE username=:uname OR email=:email LIMIT 1");
             $stmt->execute(array(':uname' => $uname, ':email' => $email));
-            $userRow = $stmt->fetch(PDO::FETCH_ASSOC);
+            $user = $stmt->fetch(PDO::FETCH_ASSOC);
             if ($stmt->rowCount() > 0) {
-                if (password_verify($pass, $userRow['jelszo'])) {
-                    $_SESSION['user'] = $userRow['id'];
+                if (password_verify($pass, $user['jelszo'])) {
+                    $_SESSION['user'] = $user;
+                    $_SESSION['kosar']=[];
+                   
                     return true;
                 } else {
                     return false;
@@ -30,11 +32,7 @@ class bejelentkezesModel {
         header("Location: $url");
     }
 
-    public function logout() {
-        session_destroy();
-        unset($_SESSION['user']);
-        return true;
-    }
+   
 
 }
 ?>
