@@ -18,7 +18,7 @@ if (isset($_POST['regisztracio'])) {
 
     if ($uname == "") {
         $error[] = "Meg kell adni egy felhasználónevet !";
-    } /* else if ($email == "") {
+    }  else if ($email == "") {
       $error[] = "Meg kell adni egy e-mail címet !";
       }else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
       $error[] = 'Valós e-mail címet adj meg !';
@@ -26,7 +26,7 @@ if (isset($_POST['regisztracio'])) {
       $error[] = "Meg kell adni egy jelszót !";
       } else if (strlen($pass) < 6) {
       $error[] = "Legalább 6 karakter hosszúnak kell lennie a jelszónak";
-      } */ else {
+      }  else {
         try {
             $pdo = Application::getConnection();
             $stmt = $pdo->prepare("SELECT username, email FROM user WHERE username=:uname OR email=:email");

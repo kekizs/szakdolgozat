@@ -12,6 +12,7 @@
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
         <link rel="stylesheet" href="../../assets/logstyle.css" type="text/css"  />
+        <link rel="stylesheet" href="../style.css" type="text/css"  />
         <link rel='stylesheet' id='woocommerce-general-css'  href='//mdbootstrap.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=3.1.1' type='text/css' media='all' />
 <link rel='stylesheet' id='wsl-widget-css'  href='https://mdbootstrap.com/wp-content/plugins/wordpress-social-login/assets/css/style.css?ver=4.8.1' type='text/css' media='all' />
 <link rel='stylesheet' id='compiled.css-css'  href='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled.min.css?ver=4.4.0' type='text/css' media='all' />
@@ -87,7 +88,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="./index.php?r=hir/hir">Hírek <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="./index.php?r=hir/listaz">Hírek <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./index.php?r=termekek/lista">Termékeink</a>

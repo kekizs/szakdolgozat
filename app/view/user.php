@@ -1,37 +1,9 @@
-<?php
-require_once("./app/model/userModel.php");
-$user = new userModel();
 
-
-if ($user->is_loggedin()) {
-
-
-    if (isset($_POST['modositas'])) {
-        $vname = strip_tags($_POST['vname']);
-        $kname = strip_tags($_POST['kname']);
-        $uname = strip_tags($_POST['uname']);
-        $email = strip_tags($_POST['email']);
-        $telefon = ($_POST['tel']);
-        $szuldatum = ($_POST['szuldatum']);
-
-        if ($user->modify($vname, $kname, $uname, $reg_datum, $telefon, $email, $szuldatum)) {
-            $user->redirect('user.php');
-        }
-    }
-}
-/*
-foreach ($pdo->query($stmt) as $row) {
-    $result[] = new lekerdez($row);
-}
-    $leker->id=$id;
-    foreach ($result as $leker)
-        */
-?>
 <div class="signin-form">
 
     <div class="container">
 
-        <form method="post" class="form-signin">
+        <form method="post"  action="./index.php?r=user/save"class="form-signin">
             <h2 class="form-signin-heading">Adatmódosítás</h2><hr />
 
             <!-- <div class="alert alert-danger">
@@ -44,22 +16,22 @@ foreach ($pdo->query($stmt) as $row) {
 
 
             <div class="form-group">
-                <input type="text" class="form-control" name="vname" placeholder="vezetéknév" value="<?php $leker->vnev ?>" />
+                <input type="text" class="form-control" name="vname" placeholder="vezetéknév" value="<?=$user->vezeteknev; ?>" />
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" name="kname" placeholder="keresztnév" value="<?php $leker->knev ?>" />
+                <input type="text" class="form-control" name="kname" placeholder="keresztnév" value="<?= $user->keresztnev ?>" />
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" name="uname" placeholder="felhasználónév" value="<?php $leker->uname ?>" />
+                <input type="text" class="form-control" name="uname" placeholder="felhasználónév" value="<?= $user->username ?>" />
             </div>
             <div class="form-group">
-                <input type="email" class="form-control" name="email" placeholder="e-mail cím" value="" />
+                <input type="email" class="form-control" name="email" placeholder="e-mail cím" value="<?= $user->email ?>" />
             </div>
             <div class="form-group">
-                <input type="tel" class="form-control" name="tel" placeholder="telefonszám" value="" />
+                <input type="tel" class="form-control" name="tel" placeholder="telefonszám" value="<?= $user->telefonszam?>" />
             </div>
             <div class="form-group">
-                <input placeholder="Születési Dátum" type="text" onfocus="(this.type = 'date')" class="form-control" name="szuldatum" placeholder="Sz" value="" />
+                <input placeholder="Születési Dátum" type="text" onfocus="(this.type = 'date')" class="form-control" name="szuldatum" placeholder="Sz" value="<?= $user->szuletesi_datum?>" />
             </div>
 
             <div class="clearfix"></div><hr />

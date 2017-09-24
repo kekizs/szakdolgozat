@@ -14,9 +14,12 @@ class hirModel {
       //adatok kezelése függvény segítségével
        
     }
-  public function kilista() {
+  public function kilista($count=null) {
         $pdo = Application::getConnection();
-        $termek1="select * from hirek order by datum DESC LIMIT 3; ";
+        $termek1="select * from hirek order by datum DESC ";
+        if(isset($count)){
+            $termek1 .=" limit {$count}";
+        }
         $stm=$pdo->prepare($termek1);
         $stm->execute();
         $result=$stm->fetchAll(PDO::FETCH_ASSOC);

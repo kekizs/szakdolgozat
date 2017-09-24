@@ -1,4 +1,4 @@
-<form method="POST" action="./index.php?r=kosar/veglegesit">
+
 
 <h5 class="pt-1 pb-5">Shopping Cart table</h5>
 
@@ -6,7 +6,7 @@
             <div class="row">
             
                 <!--Grid column-->
-                <div class="col-md-12">
+                <div class="col-md-12" style="margin: 5px;" >
             
                     <!--Shopping Cart table-->
                     <div class="table-responsive">
@@ -16,11 +16,12 @@
                                 <tr>
                                     <th></th>
                                     <th>Termék</th>
-                                    <th>Color</th>
-                                    <th>Size</th>
-                                    <th>Darabár</th>
-                                    <th>Mennyiség</th>
+                           
+                                    <th>Ár</th>
+                                    <th>Darab</th>
+                                   
                                     <th>Végösszeg</th>
+                                    <th>Törlés</th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -39,7 +40,7 @@
                                         <p class="text-muted">by FifeSteps</p>
                                     </td>-->
                                     <td><?= $termek['termeknev']?></td>
-                                    <td><?= $termek['ar']?></td>
+                                    <td><?= $termek['ar']?> Ft</td>
                                     <td>
                                          <span class="qty"><?= $termek['db']?> </span>
                                        <div class="btn-group" data-toggle="buttons">
@@ -52,7 +53,7 @@
                                         </div>
 
                                     </td>
-                                    <td><?php echo $termek['db']*$termek['ar']?> $</td>
+                                    <td><?php echo $termek['db']*$termek['ar']?> Ft</td>
                                     <td>
                                         <button type="button" deletebutton class="btn btn-tb btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item">X
                                         </button>
@@ -61,7 +62,10 @@
                                 <!--/First row-->
                         <?php }?>
                                 
-
+                                <tr><td colspan="5"></td><td>
+                                        
+                                        <a href="./index.php?r=kosar/check" class="btn btn-tb btn-primary waves-effect waves-light">Fizetés</a>
+                                    </td></tr>
                             </tbody>
                             <!--/Table body-->
                         </table>
@@ -72,4 +76,4 @@
                 <!--Grid column-->
             
             </div>
-</form>          
+          

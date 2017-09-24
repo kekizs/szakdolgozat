@@ -66,4 +66,14 @@ class kosarController extends controller {
         print $value;
     }
 
+    public function check() {
+        
+        require_once './app/model/kosarModel.php';
+        $model = new kosarModel;
+        $termekek = $model->kiir();
+
+        $this->render('./app/view/check.php', ['termekek' => $termekek]);
+        
+        
+    }
 }
