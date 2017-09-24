@@ -1,6 +1,7 @@
 <!--Grid column-->
-
+ 
  <?php foreach ($termekek as $termek){?>
+<div class="row text-left" >
 <div class="col-lg-4 col-md-6 mb-r">
 
 
@@ -8,7 +9,7 @@
 
 
         <div class="view overlay hm-white-slight z-depth-1">
-            <img src="http:\\localhost\kepek\2.jpg" class="img-fluid" alt="">
+            <img src="<?= $termek["img"] ?>" class="img-fluid" alt="">
             <a>
                 <div class="mask"></div>
             </a>
@@ -37,9 +38,5 @@
 </div>
 
 
-</div>
-
-
-
-</div> 
+</div> </div>
  <?php } ?>

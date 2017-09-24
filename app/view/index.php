@@ -19,7 +19,7 @@ $length = 50;
                             <br>
                             <div class="list-group">
                                 <?php foreach ($kategoriak as $kat) { ?>
-                                    <a href="#" class="list-group-item"><?= $kat["kategoria"] ?></a>
+                                <a href="./index.php?r=termekek/katlista/<?= $kat['id'] ?>" class="list-group-item" item="<?= $kat["id"] ?>"><?= $kat["kategoria"] ?></a>
                                 <?php } ?>
                             </div>
                         </div>

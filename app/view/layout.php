@@ -56,22 +56,23 @@
             }
 
             .navbar {
-                background-color: #4E2E28;
+                background-color: #ec971f;
             }
 
             footer.page-footer {
-                background-color: #4E2E28;
+                background-color: #ec971f;
                 margin-top: 2rem;
             }
             .card {
                 font-weight: 300;
             }
             .navbar .btn-group .dropdown-menu a:hover {
-                color: #000 !important;
+                color: #ec971f !important;
             }
             .navbar .btn-group .dropdown-menu a:active {
-                color: #fff !important;
+                color: #ec971f ;margin: 20px !important ;
             }
+            .valami {min-height: 700px; padding-top: 80px;}
         </style>
     </head>
     <body class="fixed-sn mdb-skin-custom" data-spy="scroll" data-target="#scrollspy" data-offset="15">
