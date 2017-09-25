@@ -129,7 +129,7 @@ $length = 50;
                                     <div class="card wow fadeIn" data-wow-delay="0.2s">
 
                                         <!--Card image-->
-                                        <img class="img-fluid" src="http:\\localhost\kepek\1.jpg" alt="Card image cap">
+                                        <img class="img-fluid" src="<?= $hir['img'];?>" alt="Card image cap">
 
                                         <!--Card content-->
                                         <div class="card-body">

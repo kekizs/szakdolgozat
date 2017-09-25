@@ -16,9 +16,17 @@
         <link rel='stylesheet' id='woocommerce-general-css'  href='//mdbootstrap.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=3.1.1' type='text/css' media='all' />
 <link rel='stylesheet' id='wsl-widget-css'  href='https://mdbootstrap.com/wp-content/plugins/wordpress-social-login/assets/css/style.css?ver=4.8.1' type='text/css' media='all' />
 <link rel='stylesheet' id='compiled.css-css'  href='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled.min.css?ver=4.4.0' type='text/css' media='all' />
-        
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v2.10&appId=367072603733280";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
         <style rel="stylesheet">
 
+*
 
 
 
@@ -88,7 +96,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
+                            <li class="nav-item">
                                 <a class="nav-link" href="./index.php?r=hir/listaz">Hírek <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
@@ -213,12 +221,13 @@
                                 <a href="#!">Link 3</a>
                             </li>
                             <li>
-                                <a href="#!">Link 4</a>
+                             
                             </li>
                         </ul>
                     </div>
                     <!--/.Fourth column-->
                 </div>
+                     <div class="fb-follow" data-href="https://www.facebook.com/csokimanufaktura/" data-layout="standard" data-size="large" data-show-faces="true"></div>
             </div>
             <!--/.Footer links-->
             <hr>
@@ -228,6 +237,7 @@
             <!--Copyright-->
             <div class="footer-copyright">
                 <div class="container-fluid">
+                 
                     © 2015 Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
 
                 </div>

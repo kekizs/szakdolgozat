@@ -7,7 +7,7 @@ $length=50;
                 <div class="card card-dark">
                     <!--Card image-->
                     <div class="view overlay hm-white-slight">
-                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2821%29.jpg" class="img-fluid" alt="">
+                        <img src="<?= $hir['img'];?>" class="img-fluid" alt="">
                         <a>
                             <div class="mask"></div>
                         </a>
