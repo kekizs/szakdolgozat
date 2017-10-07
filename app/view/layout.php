@@ -2,20 +2,20 @@
 
 <html>
     <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Bootstrap core CSS -->
-        <link href="../../assets/bootstrap-material-design/css/bootstrap.min.css" rel="stylesheet">
+        <link href="./assets/bootstrap-material-design/css/bootstrap.min.css" rel="stylesheet">
         <!-- Material Design Bootstrap -->
-        <link href="../../assets/bootstrap-material-design/css/mdb.min.css" rel="stylesheet">
+        <link href="./assets/bootstrap-material-design/css/mdb.min.css" rel="stylesheet">
         <!-- Your custom styles (optional) -->
-        <link href="../../assets/bootstrap-material-design/css/style.css" rel="stylesheet">
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-        <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+        <link href="./assets/bootstrap-material-design/css/style.css" rel="stylesheet">
+        <link href="./assets/bootstrap-material-design/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="./assets/bootstrap-material-design/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
         <link rel="stylesheet" href="../../assets/logstyle.css" type="text/css"  />
-        <link rel="stylesheet" href="../style.css" type="text/css"  />
+        <link rel="stylesheet" href="../../assets/bootstrap-material-design/css/style.css" type="text/css"  />
         <link rel='stylesheet' id='woocommerce-general-css'  href='//mdbootstrap.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=3.1.1' type='text/css' media='all' />
 <link rel='stylesheet' id='wsl-widget-css'  href='https://mdbootstrap.com/wp-content/plugins/wordpress-social-login/assets/css/style.css?ver=4.8.1' type='text/css' media='all' />
-<link rel='stylesheet' id='compiled.css-css'  href='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled.min.css?ver=4.4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='compiled.css-css'  href='../../assets/bootstrap-material-design/css/compiled.min.css' type='text/css' media='all' />
         <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -24,6 +24,32 @@
   js.src = "//connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v2.10&appId=367072603733280";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.search-box input[type="text"]').on("keyup input", function(){
+        /* Get input value on change */
+        var inputVal = $(this).val();
+        var resultDropdown = $(this).siblings(".result");
+        if(inputVal.length){
+            $.get("/app/view/backend-search.php", {termeknev: inputVal}).done(function(data){
+                // Display the returned data in browser
+                resultDropdown.html(data);
+            });
+        } else{
+            resultDropdown.empty();
+        }
+    });
+    
+    // Set search input value on click of result item
+    $(document).on("click", ".result p", function(){
+        $(this).parents(".search-box").find('input[type="text"]').val($(this).text());
+        $(this).parent(".result").empty();
+    });
+});
+</script>
         <style rel="stylesheet">
 
 *
@@ -103,18 +129,15 @@
                                 <a class="nav-link" href="./index.php?r=termekek/lista">Termékeink</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Tortakészítés</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./index.php?r=tortenelem/tori">Tortatörténelem</a>
+                                <a class="nav-link" href="./index.php?r=tortenelmek/tori">Tortatörténelem</a>
                             </li>
 
                             <li class="nav-item btn-group">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Letöltés 
                                 </a>
                                 <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Képeslap</a>
-                                    <a class="dropdown-item" href="#">Receptek</a>
+                                    <a class="dropdown-item" href="./index.php?r=kepeslap/kepeslapok">Képeslap</a>
+                                    <a class="dropdown-item" href="./index.php?r=receptek/recept">Receptek</a>
 
                                 </div>
                             </li>
@@ -124,9 +147,12 @@
                                 </li>
                             <?php endif; ?>
                         </ul>
+                        <div class="search-box">
                         <form class="form-inline">
                             <input class="form-control mr-sm-2" type="text" placeholder="Keresés" aria-label="Search">
                         </form>
+                             <div class="result"></div>
+                        </div>
                         <?php if ($user != false) : ?>
                             <ul class="navbar-nav mr-auto"> 
                                 <li class="nav-item dropdown">
@@ -245,15 +271,15 @@
             <!--/.Copyright-->
 
         </footer>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="../../assets/bootstrap-material-design/js/popper.min.js"></script>
-        <script type="text/javascript" src="../../assets/bootstrap-material-design/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="../../assets/bootstrap-material-design/js/mdb.min.js"></script>
+        
+        <script type="text/javascript" src="./assets/bootstrap-material-design/js/popper.min.js"></script>
+        <script type="text/javascript" src="./assets/bootstrap-material-design/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./assets/bootstrap-material-design/js/mdb.min.js"></script>
         <script src="./assets/script.js"></script>
-        <script type='text/javascript' src='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/ajax-auth-script.js?ver=4.8.1'></script>
+       
 <script type='text/javascript' src='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/comments-reply-mod.js?ver=4.8.1'></script>
 <script type='text/javascript' src='https://mdbootstrap.com/wp-content/plugins/brandflow-wp/public/js/brandflow-wp-public.js?ver=1.0.0'></script>
-<script type='text/javascript' src='https://mdbootstrap.com/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-form-move-tracker.js?ver=1.7.1'></script>
+
 <script type='text/javascript'>
     </body>
 </html>

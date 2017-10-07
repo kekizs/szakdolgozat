@@ -1,4 +1,5 @@
 <?php
+
 error_reporting(E_ERROR);
 
 require_once './app/controller/controller.php';
@@ -31,6 +32,12 @@ class defaultController extends controller {
             $nev = strip_tags($_POST['nev']);
             $email = strip_tags($_POST['email']);
 
+            $error = [];
+            if ($nev == "") {
+                $error[] = "Meg kell adni egy felhasználónevet !";
+            } else if ($email == "") {
+                $error[] = "Meg kell adni egy e-mail címet !";
+            }
             $hirlevel = "Kedves " . $_POST['nev'] . "! <br><br>
 		Ön sikeresen feliratkozott a TortaWebShop hírlevelére! <br><br>";
             //$hirlevel.="A küldés időpontja: ".$_POST['send_time']." <br>";
@@ -61,23 +68,24 @@ class defaultController extends controller {
             //copy
             $mail->AddBCC("csokolademanufakaktura@gmail.com", "TortaWebshop");
             //emailküldés
-            if (!$mail->Send())
+            if (!$mail->Send()){
                 print "Üzenetküldési hiba" . $mail->ErrorInfo;
-            else {
+            } else {
                 print "Üzenet elküldve!";
+                print $error;
                 header("refresh:3;url=index.php");
             }
+            
+        
         }
-
 
         if ($level->hirlevel($nev, $email)) {
             $level->redirect('index.php');
         }
 
-
         $this->render('./app/view/index.php', ["hirek" => $hirek, "termekek" => $termekek, "kategoriak" => $kategoriak]);
     }
-
+    
     public function hirlevel() {
         
     }

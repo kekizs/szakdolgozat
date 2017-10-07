@@ -33,7 +33,7 @@ if (isset($error)) {
                                 <hr />
 
                                 <div class="form-group">
-                                    <button type="submit" name="btn-login" class="btn btn-default">
+                                    <button type="submit" name="btn-login" class="btn btn waves-effect waves-light" style="background-color:#5c3317 ">
                                         <i class="glyphicon glyphicon-log-in"></i> &nbsp; Bejelentkezés
                                     </button>
                                 </div>  

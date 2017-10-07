@@ -9,7 +9,7 @@ $osszeg = 0;
 </head>
 
 <body>
-    <h5 class="pt-1 pb-5">Shopping Cart table</h5>
+   
 
     <!--Grid row-->
     <div class="row">
@@ -73,8 +73,8 @@ $osszeg = 0;
 
                         <tr><td colspan="4"></td><td>
 
-                                <a href="./index?r=kosar/check" class="btn btn-tb btn-primary waves-effect waves-light">Fizetés</a>
-                                <div id="paypal-button-container"></div>
+                               <!-- <a href="./index?r=kosar/check" class="btn btn-tb btn-primary waves-effect waves-light">Fizetés</a>-->
+                               <b>Fizetéshez kattintson a paypal ikonra:</b> <div id="paypal-button-container"></div>
 
 
 
@@ -143,9 +143,8 @@ $osszeg = 0;
 
         </div>
         <!--Grid column-->
-
-</body>
-amount: {total: <?= $osszeg; ?>, currency: 'HUF'}
-
+<!--amount: {total: <?= $osszeg; ?>, currency: 'HUF'}
 sandbox: 'ARSjQ_7wrxcbMLOGiFXgQidDQocCYKnN0p8saSU_Oqq7vR9lfOtFJXB-KM-iQD_g31Zx7f-H2OQ8bbUL',
-production: 'AQyKpVDJKaQA6gm_rL9nwKITx8YIdGmoZewILe_pGjH2F7b_kAmFIDNwP75L11XbgLzNdUxlobHaaHqO'
+production: 'AQyKpVDJKaQA6gm_rL9nwKITx8YIdGmoZewILe_pGjH2F7b_kAmFIDNwP75L11XbgLzNdUxlobHaaHqO'-->
+    </div>
+</body>

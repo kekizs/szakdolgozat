@@ -1,11 +1,13 @@
 <!--Grid column-->
+  
+
  
- <?php foreach ($termekek as $termek){?>
 <div class="row text-left" >
+       <?php foreach ($termekek as $termek){?>
 <div class="col-lg-4 col-md-6 mb-r">
 
 
-    <div class="card">
+    <div class="card" style="max-height: 350px; max-width: 350px;">
 
 
         <div class="view overlay hm-white-slight z-depth-1">
@@ -28,7 +30,7 @@
 
 
         <div class="card-footer d-flex justify-content-center">
-            <span class="left" style="color:#4285F4"><strong><?= $termek["ar"] ?></strong> <!--<span class="discount">199$</span>--></span>
+            <span class="left" style="color:#5c3317"><strong><?= $termek["ar"] ?> Ft</strong> <!--<span class="discount">199$</span>--></span>
 
         </div>
 
@@ -38,5 +40,6 @@
 </div>
 
 
-</div> </div>
- <?php } ?>
+</div>  <?php } ?>
+</div>
+

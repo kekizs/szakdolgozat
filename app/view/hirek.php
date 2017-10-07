@@ -7,7 +7,7 @@ $length=50;
                 <div class="card card-dark">
                     <!--Card image-->
                     <div class="view overlay hm-white-slight">
-                        <img src="<?= $hir['img'];?>" class="img-fluid" alt="">
+                        <img src="<?= $hir['img'];?>" class="img-fluid" alt="" style="min-height: 262px;">
                         <a>
                             <div class="mask"></div>
                         </a>

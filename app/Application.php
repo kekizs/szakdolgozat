@@ -9,7 +9,8 @@ class Application {
     //melyik controller melyik method-a
     public static function getConnection() {
         if (!isset(self::$config)) {
-            self::$config = require_once './app/config.php';
+          
+            self::$config = require_once (__DIR__ . '/config.php');
         }
         if (!isset(self::$pdo)) {
             $server = self::$config["db"]["host"];

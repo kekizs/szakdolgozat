@@ -1248,7 +1248,7 @@
 }
 
 .primary-color {
-  background-color: #4285F4 !important;
+  background-color: #5c3317 !important;
 }
 
 .primary-color-dark {
@@ -1504,7 +1504,7 @@
 }
 
 .bg-primary {
-  background-color: #4285F4 !important;
+  background-color: #5c3317 !important;
 }
 
 .bg-danger {
@@ -5243,11 +5243,11 @@ a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus, a:not([href]
 }
 
 .bq-primary {
-  border-left: 3px solid #4285F4;
+  border-left: 3px solid #5c3317;
 }
 
 .bq-primary .bq-title {
-  color: #4285F4;
+  color: #5c3317;
 }
 
 .bq-warning {
@@ -5598,7 +5598,7 @@ button:focus {
 }
 
 .btn-primary {
-  background-color: #4285F4;
+  background-color: #5c3317;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
@@ -5606,7 +5606,7 @@ button:focus {
 }
 
 .btn-primary.dropdown-toggle {
-  background-color: #4285F4 !important;
+  background-color: #5c3317 !important;
 }
 
 .btn-primary.dropdown-toggle:hover, .btn-primary.dropdown-toggle:focus {
@@ -5614,15 +5614,15 @@ button:focus {
 }
 
 .btn-outline-primary {
-  border: 2px solid #4285F4;
-  color: #4285F4 !important;
+  border: 2px solid #5c3317;
+  color: #5c3317 !important;
   background-color: transparent;
 }
 
 .btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary:active:focus, .btn-outline-primary.active {
   background-color: transparent;
-  color: #4285F4;
-  border-color: #4285F4;
+  color: #5c3317;
+  border-color: #5c3317;
 }
 
 .btn-danger {
@@ -6688,7 +6688,7 @@ button:focus {
 }
 
 .navbar.navbar-light form input[type=text]:focus:not([readonly]) {
-  border-color: #4285F4;
+  border-color: #5c3317;
 }
 
 .navbar.navbar-light form .form-control {
@@ -6755,7 +6755,7 @@ button:focus {
 }
 
 .navbar.navbar-dark form input[type=text]:focus:not([readonly]) {
-  border-color: #4285F4;
+  border-color: #5c3317;
 }
 
 .navbar.navbar-dark form .form-control {
@@ -6856,7 +6856,7 @@ button:focus {
 }
 
 .pagination.pg-blue .active .page-link {
-  background-color: #4285F4;
+  background-color: #5c3317;
 }
 
 .pagination.pg-red .active .page-link {
@@ -6888,7 +6888,7 @@ button:focus {
 }
 
 .badge-primary {
-  background-color: #4285F4;
+  background-color: #5c3317;
 }
 
 .badge-danger {
@@ -8211,8 +8211,8 @@ input[type=number]:focus:not([readonly]),
 input[type=search-md]:focus:not([readonly]),
 input[type=search]:focus:not([readonly]),
 textarea.md-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #4285F4;
-  box-shadow: 0 1px 0 0 #4285F4;
+  border-bottom: 1px solid #5c3317;
+  box-shadow: 0 1px 0 0 #5c3317;
 }
 
 input[type=text]:focus:not([readonly]) + label,
@@ -8227,7 +8227,7 @@ input[type=number]:focus:not([readonly]) + label,
 input[type=search-md]:focus:not([readonly]) + label,
 input[type=search]:focus:not([readonly]) + label,
 textarea.md-textarea:focus:not([readonly]) + label {
-  color: #4285F4;
+  color: #5c3317;
 }
 
 input[type=text].valid, input[type=text]:focus.valid,
@@ -8475,7 +8475,7 @@ textarea.md-textarea.input-alternate:focus {
 }
 
 .md-form .prefix.active {
-  color: #4285F4;
+  color: #5c3317;
 }
 
 @media only screen and (max-width: 992px) {
@@ -8601,7 +8601,7 @@ textarea.md-textarea {
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #4285F4;
+  background-color: #5c3317;
   color: #fff;
 }
 

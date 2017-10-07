@@ -1,4 +1,4 @@
-<?php
+
 //email form
 /*if (!isset($_POST['submit'])) {
 	print '<div id="email">

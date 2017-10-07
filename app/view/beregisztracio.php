@@ -104,14 +104,16 @@ if (isset($_POST['regisztracio'])) {
             <div class="form-group">
                 <input type="password" class="form-control" name="pass" placeholder="Jelszó" />
             </div
-            <div class="clearfix"></div><hr />
+            <div class="clearfix"><hr />
             <div class="form-group">
                 <button type="submit" class="btn btn-primary" name="regisztracio">
                     <i class="glyphicon glyphicon-open-file"></i>&nbsp;regisztráció
-                </button>
+                </button>  
+                <br />
+                <label>Regisztrált már? <a href="./index.php?r=bejelentkezes/bejelent">Bejelentkezés</a></label>
             </div>
-            <br />
-            <label>Regisztrált már? <a href="./index.php?r=bejelentkezes/bejelent">Bejelentkezés</a></label>
+          
+            
         </form>
     </div>
 </div>

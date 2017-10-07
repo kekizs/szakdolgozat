@@ -1,12 +1,12 @@
 <?php
 
-class tortenelemModel {
+class receptekModel {
 
     public function kiir($id) {
         $pdo = Application::getConnection();
-        $tori1 = "select * from torihirek ";
-        $tori1 .= $id === false ? "order by id" : "where id={$id}";
-        $stm = $pdo->prepare($tori);
+        $recept = "select * from receptek ";
+       $recept .= $id === false ? "order by id" : "where id={$id}";
+        $stm = $pdo->prepare($recept);
         $stm->execute();
         $result = $stm->fetch(PDO::FETCH_ASSOC);
         return $result;
@@ -14,11 +14,11 @@ class tortenelemModel {
     
     public function kilista($count=null) {
         $pdo = Application::getConnection();
-        $torik1="select * from torihirek order by id ";
+        $recept="select * from receptek order by id ";
         if(isset($count)){
-            $torik1 .=" limit {$count}";
+            $recept .=" limit {$count}";
         }
-        $stm=$pdo->prepare($torik1);
+        $stm=$pdo->prepare($recept);
         $stm->execute();
         $result=$stm->fetchAll(PDO::FETCH_ASSOC);
             return $result;

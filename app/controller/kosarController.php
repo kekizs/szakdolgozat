@@ -14,6 +14,10 @@ class kosarController extends controller {
     }
 
     public function add() {
+        if(!isset($_SESSION['user'])){
+            header("HTTP 500 Internal Server Error", true, 500);
+            die ('Kérem jelentkezzen be');
+        }
         require_once './app/model/kosarModel.php';
 
         $model = new kosarModel;

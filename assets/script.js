@@ -1,3 +1,5 @@
+/* global $user */
+
 $(document).ready(function () {
 
 
@@ -12,15 +14,19 @@ $(document).ready(function () {
                 id: id
             },
             success: function (data) {
-                alert("A terméket kosárba rakta(" + data + ")");
+               
+                    alert("A terméket kosárba rakta(" + data + ")");
+               
+               
             },
             error: function (message) {
-                alert(message);
+                alert(message.responseText);
             }
         })
 
 
     });
+
 
     $("label.plusbtn").click(function () {
 
@@ -74,10 +80,10 @@ function counter(item, direction) {
         },
         success: function (data) {
             var span = $(item).closest('td').find('span.qty').get(0);
-    
+
             $(span).text(data);
 
-          
+
         },
         error: function (message) {
             alert(message);

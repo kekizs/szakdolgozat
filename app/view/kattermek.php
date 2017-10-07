@@ -1,3 +1,5 @@
+<div class="row text-left" >
+
  <?php foreach ($katlistak as $katlista){?>
 
 <div class="col-lg-4 col-md-6 mb-r">
@@ -38,3 +40,4 @@
 
 </div> 
  <?php } ?>
+</div>
