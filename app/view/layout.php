@@ -11,11 +11,13 @@
         <link href="./assets/bootstrap-material-design/css/style.css" rel="stylesheet">
         <link href="./assets/bootstrap-material-design/css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="./assets/bootstrap-material-design/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
-        <link rel="stylesheet" href="../../assets/logstyle.css" type="text/css"  />
-        <link rel="stylesheet" href="../../assets/bootstrap-material-design/css/style.css" type="text/css"  />
+        <link rel="stylesheet" href="./assets/logstyle.css" type="text/css"  />
+        <link rel="stylesheet" href="./assets/bootstrap-material-design/css/style.css" type="text/css"  />
         <link rel='stylesheet' id='woocommerce-general-css'  href='//mdbootstrap.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=3.1.1' type='text/css' media='all' />
 <link rel='stylesheet' id='wsl-widget-css'  href='https://mdbootstrap.com/wp-content/plugins/wordpress-social-login/assets/css/style.css?ver=4.8.1' type='text/css' media='all' />
-<link rel='stylesheet' id='compiled.css-css'  href='../../assets/bootstrap-material-design/css/compiled.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='compiled.css-css'  href='./assets/bootstrap-material-design/css/compiled.min.css' type='text/css' media='all' />
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/themes/base/minified/jquery-ui.min.css" type="text/css" /> 
+
         <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -27,6 +29,7 @@
 
 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script> 
 <script type="text/javascript">
 $(document).ready(function(){
     $('.search-box input[type="text"]').on("keyup input", function(){
@@ -48,6 +51,15 @@ $(document).ready(function(){
         $(this).parents(".search-box").find('input[type="text"]').val($(this).text());
         $(this).parent(".result").empty();
     });
+});
+
+$(function() {
+	
+	//autocomplete
+	$(".auto").autocomplete({
+		source: "backend-search.php",
+		minLength: 1
+	});				
 });
 </script>
         <style rel="stylesheet">
@@ -272,6 +284,7 @@ $(document).ready(function(){
 
         </footer>
         
+
         <script type="text/javascript" src="./assets/bootstrap-material-design/js/popper.min.js"></script>
         <script type="text/javascript" src="./assets/bootstrap-material-design/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="./assets/bootstrap-material-design/js/mdb.min.js"></script>

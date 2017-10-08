@@ -80,4 +80,13 @@ class kosarController extends controller {
         
         
     }
+    
+    public function sikeres(){
+        
+        $_SESSION['kosar']=[];
+        
+          $this->render('./app/view/sikeres.php');
+        
+        
+    }
 }

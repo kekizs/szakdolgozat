@@ -91,7 +91,7 @@ $length = 50;
                                     <div class="carousel-inner" role="listbox">
                                         <!--First slide-->
                                         <div class="carousel-item active">
-                                            <img src="http:\\localhost\kepek\1.jpg" alt="First slide" class="img-fluid">
+                                            <img src=".\kepek\1.jpg" alt="First slide" class="img-fluid">
                                             <div class="carousel-caption">
                                                 <h4>Valentín napra</h4>
                                                 <br>
@@ -100,7 +100,7 @@ $length = 50;
                                         <!--/First slide-->
                                         <!--Second slide-->
                                         <div class="carousel-item">
-                                            <img src="http:\\localhost\kepek\2.jpg" alt="Second slide" class="img-fluid">
+                                            <img src="./kepek\2.jpg" alt="Second slide" class="img-fluid">
                                             <div class="carousel-caption">
                                                 <h4>Esküvőkre!</h4>
                                                 <br>
@@ -109,7 +109,7 @@ $length = 50;
                                         <!--/Second slide-->
                                         <!--Third slide-->
                                         <div class="carousel-item">
-                                            <img src="http:\\localhost\kepek\3.jpg" alt="Third slide" class="img-fluid">
+                                            <img src="./kepek\3.jpg" alt="Third slide" class="img-fluid">
                                             <div class="carousel-caption">
                                                 <h4>Csokitorták</h4>
                                                 <br>

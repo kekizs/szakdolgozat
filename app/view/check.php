@@ -126,7 +126,7 @@ $osszeg = 0;
 
                                         onAuthorize: function (data, actions) {
                                             return actions.payment.execute().then(function () {
-                                                window.alert('Payment Complete!');
+                                                window.location.href=('index.php?r=kosar/sikeres');
                                             });
                                         }
 
